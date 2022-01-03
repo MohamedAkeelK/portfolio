@@ -1,0 +1,47 @@
+.about-section {
+  /* margin-top: 10rem; */
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* height: 100vh; */
+}
+
+.left-about {
+  width: 40%;
+  line-height: 1.8rem;
+}
+
+.list {
+  display: flex;
+}
+#about {
+  font-size: 2.4rem;
+  color: rgb(118, 139, 22);
+  font-family: "Playfair Display", serif;
+}
+
+.right-about {
+}
+
+.right-about img {
+  width: 300px;
+  border-radius: 50%;
+  border: 5px solid rgb(165, 165, 49);
+}
+
+@media only screen and (max-width: 760px) {
+  .about-section {
+    flex-direction: column-reverse;
+  }
+  #about {
+    padding-top: 2rem;
+  }
+  .left-about {
+    width: 80%;
+  }
+  .right-about img {
+    width: 200px;
+  }
+}
